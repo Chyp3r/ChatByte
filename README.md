@@ -2,7 +2,7 @@
 
 ## Please read "To Do List" before use. The tool is under development and not all features are available
 
-**The purpose of this tool is to help develop an rnn powered chatbot.**
+**The purpose of this tool is to help develop an RNN-based chatbot.**
 
 **Development continues. The final version hasn't been released yet.**
 
