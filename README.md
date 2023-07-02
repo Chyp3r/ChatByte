@@ -1,4 +1,4 @@
-# ChatByte: An RNN-based Chatbot Development Tool
+# RAF: An RNN-based Chatbot Development Tool
 
 ## Please read "To Do List" before use. The tool is under development and not all features are available
 
