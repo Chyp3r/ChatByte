@@ -1,5 +1,5 @@
 # ChatByte: An RNN-based Chatbot Development Tool
-**The purpose of this tool is to help develop an rnn powered chatbot.** 
+**The purpose of this tool is to help develop an rnn powered chatbot.**\
 **Development continues. The final version hasn't been released yet.**
 
 ## Features
