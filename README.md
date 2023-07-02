@@ -19,7 +19,7 @@
 4) Trainer (Status: Under development)
 5) Example Main Code (Status: Under development)
 6) UI (Status: Development has not started)
-7) Comment Lines and User Manual ()
+7) Comment Lines and User Manual (Status: Development has not started)
 
 ## Run
 To run, download the tool kit and add it to your project folder.
