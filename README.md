@@ -17,7 +17,7 @@
 2) Dictionary Class (Status: Final version)
 3) Tool Helpers (Status: The first version is ready. Updates keep coming)
 4) RNN Architecture (Status: Final version)
-5) Trainer (Status: Under development)
+5) Trainer (Status: The first version is ready. Updates keep coming)
 6) Example Main Code (Status: Under development)
 7) UI (Status: Development has not started)
 8) Comment Lines and User Manual (Status: Development has not started)
