@@ -5,8 +5,6 @@ import dictionary
 import itertools
 from dictionary import PAD,EOS
 
-MAX_LENGTH = 10
-MIN_COUNT = 3
 
 def unicodeToAscii(i):
     asciiData = "".join(b for b in unicodedata.normalize("NFD",i) if unicodedata.category(b) != "Mn")
@@ -25,10 +23,10 @@ def dictionaryCreater(file):
     dic = dictionary.Dictionary()
     return dic,pairs
 
-def pairFilter(pairs):
+def pairFilter(pairs,MAX_LENGTH = 10):
     return [pair for pair in pairs if len(pair[0].split(' ')) < MAX_LENGTH and len(pair[1].split(' ')) < MAX_LENGTH]
 
-def rareWordCropper(dic,pairs,MIN_COUNT):
+def rareWordCropper(dic,pairs,MIN_COUNT = 3):
     dic.wordCropper(MIN_COUNT)
     pairs = []
     for pair in pairs:

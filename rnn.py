@@ -90,17 +90,18 @@ class LuongAttnDecoderRNN(nn.Module):
         return output, hidden
     
 class GreedySearchDecoder(nn.Module):
-    def __init__(self, encoder,decoder):
+    def __init__(self, encoder,decoder,device):
         super(GreedySearchDecoder,self).__init__()
         self.encoder = encoder
         self.decoder = decoder
+        self.device = device
 
     def forward(self,inputSeq,inputLen,maxLen):
         encoderOutput, encoderHidden = self.encoder(inputSeq,inputLen)
         decoderHidden = encoderHidden[decoder.nLayers]
-        decoderInput = torch.ones(1,1,device = device , dtype=torch.long)*SOS
-        allTokens = torch.zeros([0], device=device, dtype=torch.long)
-        allScores = torch.zeros([0], device=device)
+        decoderInput = torch.ones(1,1,device = self.device , dtype=torch.long)*SOS
+        allTokens = torch.zeros([0], device=self.device, dtype=torch.long)
+        allScores = torch.zeros([0], device=self.device)
 
         for _ in range(maxLen):
             decoderOutput, decoderHidden = self.decoder(decoderInput,decoderHidden,encoderOutput)
