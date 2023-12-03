@@ -20,7 +20,7 @@
 5) Trainer (Status: The first version is ready. Updates keep coming)
 6) Example Main Code (Status: Under development)
 7) UI (Status: Development has not started)
-8) Comment Lines and User Manual (Status: Development has not started)
+8) User Manual (Status: Development has not started)
 
 ## Run
 To run, download the tool kit and add it to your project folder.
